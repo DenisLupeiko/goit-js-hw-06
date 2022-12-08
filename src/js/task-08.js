@@ -9,7 +9,7 @@ function handleSubmite(event) {
   } = event.currentTarget;
 
   if (email.value === "" || password.value === "") {
-    return console.log("Будь ласка заповніть всі поля!");
+    alert ("Будь ласка заповніть всі поля!");
   }
   const userInfo = {email: email.value, password: password.value}
 
