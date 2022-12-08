@@ -11,8 +11,9 @@ function handleSubmite(event) {
   if (email.value === "" || password.value === "") {
     return console.log("Будь ласка заповніть всі поля!");
   }
+  const userInfo = {email: email.value, password: password.value}
 
-  console.log(`Login: ${email.value}, Password: ${password.value}`);
+  console.log(userInfo);
   event.currentTarget.reset();
 }
 
